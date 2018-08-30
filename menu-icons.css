@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("https://www.naturalfitness.com.br/image/catalog/site/assets/icons-menu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+li.dropdown.li-category > a.dropdown-toggle:before, ul.nav.navbar-nav > li.li-category > a:before {
+    font-family: Flaticon;
+    font-size: 25px;
+    display: block;
+    margin-bottom:10px;
+    font-weight:400;
+}
+li.dropdown.li-category > a[title="Equipamentos de Academia"]:before {
+    content: "\f101";
+    font-size: 28px;
+}
+
+li.dropdown.li-category > a[title="Acessórios"]:before {
+    content: "\f103";
+    font-size: 24px;
+}
+
+li.dropdown.li-category > a[title="Suplementos"]:before {
+    content: "\f104";
+    font-size: 23px;
+}
+
+li.dropdown.li-category > a[title="Pilates e Yoga"]:before {
+    content: "\f107";
+    font-size:23px;
+}
+
+li.dropdown.li-category > a[title="Crossfit e Funcional"]:before {
+    content: "\f102";
+    font-size: 33px !important;
+    margin-bottom: 9px;
+}
+
+ul.nav.navbar-nav > li.li-category > a[title="Promoções"]:before {
+    content: "\f100";
+}
+#menu .nav > li > a[title="Promoções"] {
+    font-weight: 700;
+    background-color: #ca3231;
+    color: #fdfdfd !important;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+    #menu .nav>li.dropdown>a, #menu .nav>li.open>a, #menu .nav>li>a, #menu .nav>li.open>a {
+        display: flex;
+    }
+    li.dropdown.li-category > a.dropdown-toggle:before, ul.nav.navbar-nav > li.li-category > a:before {
+      margin-right: 7px;
+    }
+}
